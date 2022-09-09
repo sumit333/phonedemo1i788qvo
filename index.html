@@ -10,8 +10,8 @@
 
     <body style="margin: 0; overflow: hidden;">
         <a-scene
-            vr-mode-ui="enabled: false;"
-            loading-screen="enabled: false;"
+            vr-mode-ui="enabled: true;"
+            loading-screen="enabled: true;"
             renderer="logarithmicDepthBuffer: true;"
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
@@ -32,7 +32,7 @@
                 url="assets/marker.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
+                cursor="fuse: true; rayOrigin: mouse;"
                 id="markerA"
             >
                 <a-entity
